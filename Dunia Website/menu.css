@@ -1,0 +1,52 @@
+
+.contains {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	top: -8px;
+	left:  90%;
+	transform: scale(0.5);
+}
+.menu{
+	height: 40px;
+	width: 50px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.com {
+	height: 5px;
+	width: 100%;
+	background: white;
+	position: relative;
+	background: gray;
+}
+
+.ben1 {
+	top:0;
+}
+
+.ben2 {
+	top:10px;
+}
+
+.ben3 {
+	top:20px;
+}
+.first22, .sec22, .third22 {
+	height: 100%;
+	width: 100%;
+	background: white;
+	transition: 1s;
+}
+.sec22 {
+	transition-delay: 0.1s;
+}
+.third22 {
+	transition-delay: 0.2s;
+}
+.contains:hover .first22,.contains:hover .sec22,.contains:hover .third22 {
+	width: 0%
+}

@@ -1,0 +1,188 @@
+.overlay {
+	border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+  position: fixed;
+  z-index: 1;
+  top: -35%;
+  background-color: rgba(0,0,0, 0.9);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: scale(0.5);
+  text-align: center;
+  width: 20%;
+}
+.line {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  transform: scale(0.5);
+  border: 1px solid white;
+  height: 135%;
+}
+.features {
+  position: absolute;
+  top: 45%;
+  left: 52.5%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  background: -webkit-linear-gradient(#ffff33, #ff6600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.overlay-content2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 20%;
+  transform: scale(0.5);
+  text-align: left;
+}
+.overlay-content3 {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  width: 20%;
+  transform: scale(0.5);
+  text-align: left;
+}
+
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 41%;
+  right: 50px;
+  font-size: 40px;
+  transition: 1s;
+}
+
+
+
+.cube {
+  position: relative;
+  height: 100%;
+  padding: 18px;
+  border-left: 5px solid white;
+  border-right: 5px solid black;
+ 
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 5px;
+  -moz-background-size: 100% 5px;
+  background-size: 100% 5px;
+  background-image: -webkit-linear-gradient(left,white 0%, black 100%), -webkit-linear-gradient(left,white 0%, black 100%);
+  background-image: -moz-linear-gradient(left,white 0%, black 100%), -moz-linear-gradient(left,white 0%, black 100%);
+  background-image: -o-linear-gradient(left,white 0%, black 100%), -o-linear-gradient(left,white 0%, black 100%);
+  background-image: linear-gradient(to right,white 0%, black 100%), linear-gradient(to right,white 0%, black 100%);
+}
+
+.editor {
+   position: relative;
+   top: 300px;
+   left: 100px;
+   color: white;
+   height: 130px;
+   width: 800px;
+   padding: 10px;
+   
+   font-size: 22px;
+   font-weight: 800;
+}
+
+.log_sign  {
+  position: absolute;
+  z-index: 2;
+  left: 2%;
+  font-size: 18px;
+  font-weight: 1000;
+}
+
+.log_sign a {
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  background: -webkit-linear-gradient(#ffff33, #ff6600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.5;
+}
+
+.log_sign a:hover, .log_sign a:focus {
+  background: -webkit-linear-gradient(#ffff33, #ff6600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: 30px;
+  z-index: 2;
+  }
+a.arrow {
+  text-decoration: none;
+  color: white;
+  animation: moves;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.direction {
+  z-index: 2;
+  background: transparent;
+  height: 100px;
+  width: 50px;
+  position: absolute;
+  top: 45%;
+}
+
+@keyframes moves {
+  0% {
+      top: 90%;
+  }
+  50% {
+    top: 88%;
+  }
+  100% {
+    top: 90%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+.text {
+  z-index: 2;
+  background-color: white;
+  font-size: 10vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  mix-blend-mode: screen;
+  font-family: 'Concert One', cursive;
+}

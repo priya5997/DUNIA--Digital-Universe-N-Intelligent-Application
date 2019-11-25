@@ -1,0 +1,130 @@
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Center the image and position the close button */
+.imgcontainer_sig {
+  text-align: center;
+  position: relative;
+}
+
+img.avatar_sig {
+  border-radius: 50%;
+}
+
+.container_sig {
+  color: white;
+  padding: 16px;
+}
+.container_pass_sig  {
+  color: white;
+}
+
+span.psw_sig {
+  float: right;
+  padding-top: 16px;
+}
+
+.psw_sig a {
+  text-decoration: none;
+  color: white;
+}
+
+/* The Modal (background) */
+.modal_sig {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  padding-top: 30px;
+  border: 1px solid black;
+}
+
+/* Modal Content/Box */
+.modal-content_sig {
+  background-color: rgba(0,0,0,0.5);
+  margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close_sig {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+input {
+  background: transparent;
+  color: white;
+}
+
+.close_sig:hover,
+.close_sig:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate_sig {
+  -webkit-animation: animatezoom_sig 0.6s;
+  animation: animatezoom_sig 0.6s
+}
+
+@-webkit-keyframes animatezoom_sig {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom_sig {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+select {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+option {
+  background: rgba(0,0,0,1);
+  color: white;
+}

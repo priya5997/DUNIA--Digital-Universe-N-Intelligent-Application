@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website</title>
+
+	<style type="text/css">
+		body {
+			overflow-x: hidden;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="Index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Index6.css">
+	<link rel="stylesheet" type="text/css" href="Index7.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Index_sec.css">
+<script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $("p").addClass("test");
+    } else {
+      $("p").removeClass("test");
+    }
+  });
+});
+</script>
+<link rel="stylesheet" type="text/css" href="menu.css">
+<script type="text/javascript" src="nav.js">		
+</script>
+<script type="text/javascript" >
+		$(function() {
+    var header = $(".navbar");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+  
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="new.css">
+
+
+
+
+<script type="text/javascript" src="type.js"></script>
+<link rel="stylesheet" type="text/css" href="login.css">
+<link rel="stylesheet" type="text/css" href="signup.css">
+
+
+
+
+</script>
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+*{
+	font-family: 'Advent Pro', sans-serif;
+}
+</style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://unpkg.com/splitting/dist/splitting.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+	
+<!--
+	<div class="log_sign">
+		<a href="#" class="log" onclick="document.getElementById('id01_sig').style.display='none';document.getElementById('id01').style.display='block'">Login |</a>
+		<a href="#" class="signup" onclick="document.getElementById('id01').style.display='none';document.getElementById('id01_sig').style.display='block'"> Sign Up</a>
+	</div>
+-->
+
+<a href="#Arrow" class="arrow">
+	<span>&darr;</span>
+</a>
+<div class="direction" id="Arrow"></div>
+	
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container_pass" style="background-color:#f1f1f1">
+      <span class="psw">Forgot <a href="#">Password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+<div id="id01_sig" class="modal_sig">
+  
+  <form class="modal-content_sig animate_sig" action="/action_page.php">
+    <div class="imgcontainer_sig">
+      <span onclick="document.getElementById('id01_sig').style.display='none'" class="close_sig" title="Close Modal">&times;</span>
+      <img src="icons8-add-user-male-96.png" alt="Avatar" class="avatar_sig">
+    </div>
+
+    <div class="container_sig">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="std"><b>Course</b></label>
+      	<select>
+		      	<option value="" >None</option>
+				<option value="">Primary</option>
+				<option value="">Secondary</option>
+				<option value="">Higher Secondary</option>
+				<option value="">Bachelor</option>
+				<option value="">Master</option>
+				<option value="">Doctrial</option>
+				<option value="">Enterance Exam</option>
+		</select>
+      
+	  <br>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Sign Up</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container_pass_sig" style="background-color:#f1f1f1">
+      <span class="psw_sig">Forgot <a href="#">Password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+
+// Get the modal
+var modal = document.getElementById('id01');
+var modal_sig = document.getElementById('id01_sig');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }else if(event.target == modal_sig) {
+    	 modal_sig.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+<div class="navbar">
+
+<div class="contains" id="Yournav" style="transition: 1s" onclick="openNav()">
+		<div class="menu">
+			<div class="ben1 com"><div class="first22"></div></div>
+			<div class="ben2 com"><div class="sec22"></div></div>
+			<div class="ben3 com"><div class="third22"></div></div>
+		</div>
+	</div>
+</div>
+<div id="myNav" class="overlay" style="z-index: 1000">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<div class="overlay-content">
+ 		<a onclick="closeNav()" href="#">Home</a>
+    	<a onclick="closeNav()" href="#second_page">Features</a>
+   		<a onclick="closeNav()" href="#about">Guideline</a>
+    	<a onclick="closeNav()" href="#about">Contact Us</a>
+<!--    	<a href="#" onclick="document.getElementById('id01_sig').style.display='none';document.getElementById('id01').style.display='block';closeNav()">Login</a>
+    	<a href="#" onclick="document.getElementById('id01').style.display='none';document.getElementById('id01_sig').style.display='block';closeNav()"> Sign Up</a>
+-->
+
+  	</div>
+  	<div class="line"></div>
+  	<div class="features">Features you find......</div>
+  	<div class="overlay-content2">
+ 		<a onclick="closeNav()" href="#contains331">Live knowledge</a>
+    	<a onclick="closeNav()" href="#contains332">Digital Learning</a>
+   		<a onclick="closeNav()" href="#contains333">Quiz</a>
+    	<a onclick="closeNav()" href="#contains334">Social Connection</a>
+    	<a onclick="closeNav()" href="#contains335">Different modes</a>
+    	<a onclick="closeNav()" href="#contains336">Do Work</a>
+  	</div>
+  	<div class="overlay-content3">
+ 		<a onclick="closeNav()" href="#contains337">Assessment tools</a>
+    	<a onclick="closeNav()" href="#contains338">Prepare Notes</a>
+   		<a onclick="closeNav()" href="#contains339">Smart Reading</a>
+    	<a onclick="closeNav()" href="#contains340">Create PDF</a>
+    	<a onclick="closeNav()" href="#contains341">Dashboards</a>
+    	<a onclick="closeNav()" href="#contains342">Provide Forums</a>
+  	</div>
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.transform = "scale(1)";
+  document.getElementById("Yournav").style.opacity = "0";
+  document.getElementByClassName("closebtn").style.opacity = "1";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.transform = "scale(0)";
+  document.getElementById("Yournav").style.opacity = "1";
+  document.getElementByClassName("closebtn").style.opacity = "0";
+}
+
+
+</script>
+
+	<div class="Container1">
+		<div class="MainPage">
+			<div class="container_body">
+					<video autoplay muted loop id="myVideo">
+		  			<source src="180607_A_101.mp4" type="video/mp4">
+					</video>
+			</div>
+
+		
+			<p class="typewrite editor" data-period="2000" data-type='[ "Improved student access and affordability.", 
+			"Higher retention and graduation rates.", 
+			"Reduced operational costs for institutions.", 
+			"Designing an experience.",
+			"The purpose is to teach.",
+			"Content means everything.",
+			"Bring learning to people.",
+			"Tomorrow’s skills today.",
+			"Collaborative learning." ]'>
+		    <span class="wrap"></span>
+		  	</p>
+			<div class="text dunia">DU'NIA</div>
+		
+  		</div>
+			
+		
+
+	</div>
+
+
+
+
+	<div class="Container2" id="second_page">
+		<div class="SecPage">
+			<div class="contains33" id="contains331">
+				<div class="cube">
+					
+					
+				<div class="rightSide">Live knowledge base</div>
+				<div class="text1">
+					
+					
+ 					<div class="box55">
+The instructor can quickly deliver engaging material to the students in real time in just a couple clicks. Sorry, a couple taps! Furthermore, students can use recommended resources to do their homework. Tablets give students instant access to individual research, a tremendous knowledge base available at their fingertips.</div>
+				</div>
+				<div class="image1">
+					<img src="live knowledge.jpg">			
+				</div>
+				</div>
+			</div>
+
+			<div class="contains33_rev" id="contains332">
+				<div class="cube">
+				<div class="rightSide_rev">lower textbook and tuition prices</div>
+				<div class="text1_rev">
+					<div class="box55">With resources more accessible and in great abundance, the cost of textbooks is likely to decrease. It is also possible that students may no longer need to buy a textbook, if it is converted into digital format. The actual books can stay in the classroom, while the content is saved on a student’s computer. Tuition will also decrease when learning is done online, rather than inside the classroom. By taking out the factors that contribute to a higher tuition fee, such as utility bills and transportation allowance of teachers, the overall cost of education will be lower.</div>
+				</div>
+				<div class="image1">
+					<img src="lite & portable.jpg">			
+				</div>
+				</div>
+			</div>
+
+			<div class="contains33" id="contains333">
+				<div class="cube">
+					<div class="rightSide"> Guide for future.. taking Quiz</div>
+				<div class="text1">
+					<div class="box55">This free Personality Test gives you guidance to better understand yourself. Which personality traits make you a better student or add value to your work? Add another dimension to your IQ results by taking our Spatial IQ Test. This quiz measures your ability to arrange objects, visualize dimensions in space, and develop images internally.</div>
+				</div>
+				
+				<div class="image1">
+					<img src="career path.jpg" style="width:100%;height: auto;position: relative;top:-50%;">			
+				</div>
+				</div>
+			</div>
+
+			<div class="contains33_rev" id="contains334">
+				<div class="cube">
+				<div class="rightSide_rev">Online Communities</div>
+				<div class="text1_rev">
+					<div class="box55">In a traditional school situation, students would gather at the campus library or coffee shop to review class notes or collaborate with students. Online education leans heavily on individual learning. When students need to connect with others, based on differing schedules or backgrounds, it can be problematic for non-traditional or busy students.</div>
+				</div>
+				<div class="image1">
+					<img src="portable.jpg">			
+				</div>
+				</div>
+			</div>
+
+			<div class="contains33" id="contains335">
+				<div class="cube">
+					<div class="rightSide">Uses Different Modes: Reading, Writting, Test</div>
+				
+				<div class="text1">
+					<div class="box55">Euclid described a line as "breadthless length" which "lies equally with respect to the points on itself"; he introduced several postulates as basic unprovable properties from which he constructed all of geometry, which is now called Euclidean geometry to avoid confusion with other geometries which have been introduced since the end of the 19th century (such as non-Euclidean, projective and affine geometry).</div>
+				</div>
+				<div class="image1">
+					<img src="dual screen-EPD DISPLAY.jpg">			
+				</div>
+				</div>
+			</div>
+
+
+			<div class="contains33_rev" id="contains336">
+				<div class="cube">
+				<div class="rightSide_rev">Make Assignment & Homework</div>
+				<div class="text1_rev">
+					<div class="box55">Learning independently can leave many students feeling disconnected as they move through their coursework. One-on-one interaction with teachers or tutors inspires confidence and helps students better understand their current assignments.</div>
+				</div>
+				<div class="image1">
+					<img src="prepare notes.jpg">			
+				</div>
+				</div>
+			</div>
+
+			<div class="contains33" id="contains337">
+				<div class="cube">
+				<div class="rightSide">Assessment tools</div>
+				<div class="text1">
+					<div class="box55">Online quizzes and tests can help students pinpoint areas of improvement, based on subject or skill. Making time to use assessment tools can help learners gain extra practice outside of their normal class work or ongoing projects.</div>
+				</div>
+				<div class="image1">
+					<img src="IQ test.jpg">			
+				</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="contains33_rev" id="contains338">
+				<div class="cube">
+				<div class="rightSide_rev">Prepare Notes, Edit & Share Anywhere-Anytime</div>
+				<div class="text1_rev">
+					<div class="box55">All notes are saved in one convenient spot.Notes can be backed up to a cloud server, Notes stay together ,Multimedia forms of notes can be taken,Students can more easily share and collaborate over their notes, There is expanded opportunity for formatting, including changing fonts, colors, and shapes,Notes can even include audio files,Special note-taking apps exist to simplify and maximize these processes,</div>
+				</div>
+				<div class="image1">
+					<img src="Maths.jpg">			
+				</div>
+				</div>
+			</div>
+
+
+			<div class="contains33" id="contains339">
+				<div class="cube">
+				<div class="rightSide">Smart Reading Using Annotated System</div>
+				<div class="text1">
+					<div class="box55">Both classroom and online learning ask students doing reading activities. The mature and widely used e-readers allow students reading and making annotation on the screen with their computer, tablet, or even smartphone. Annotations will be a very important resource aside from the notes for students while preparing for exams. In such case, students may reconsider the content they choose to ignore or overlooked earlier and make their annotations more complete and better for exam preparation later.
+					</div>
+				</div>
+				<div class="image1">
+					<img src="reading.jpg">			
+				</div>
+				</div>
+			</div>
+
+
+			<div class="contains33_rev" id="contains340">
+				<div class="cube">
+				<div class="rightSide_rev">OCR process to Create PDF</div>
+				<div class="text1_rev">
+					<div class="box55">Optical Character Recognition (OCR) is a process that makes text within a PDF recognizable and readable by other types of programs or apps. OCR (also sometimes referred to as Text Recognition) makes text within a PDF searchable. There are programs that can apply OCR to previously scanned documents but it can be time-consuming when you just need to quickly scan a document and get it sent out. If you know you will need OCR features, you can skip down to the Adobe Scan section of this article.</div>
+				</div>
+				<div class="image1">
+					<img src="ocr  scanner.jpeg">			
+				</div>
+				</div>
+			</div>
+
+			<div class="contains33" id="contains341">
+				<div class="cube">
+				<div class="rightSide">Dashboards/ Super Gradebooks</div>
+				<div class="text1">
+					<div class="box55">Learning dashboards can offer both primary and college-age students and teachers a way to better visualize progress through a semester through a mix of reports and assessments. Depending on the age of the learner, students or their parents can review the data gathered via the dashboard.
+					Unlike the pen and paper gradebooks of the past, super gradebooks can offer students a deeper level of feedback from teachers than before. Educators can analyze one or multiple students’ performance. Utilizing a super gradebook platform also means teachers can intervene earlier, helping students address issues head on.</div>
+				</div>
+				<div class="image1">
+					<img src="review and ratting.jpg">			
+				</div>
+				</div>
+			</div>
+
+
+			<div class="contains33_rev" id="contains342">
+				<div class="cube">
+				<div class="rightSide_rev">Watch Video & Tutorials/Provide Forums</div>
+				<div class="text1_rev">
+					<div class="box55">While social media remains a popular way to connect with peers, online forums create a way for students to mingle and discuss courses, assignments, and other pertinent information. It also provides an extra outlet for students to get answers to questions from fellow students or their professors.</div>
+				</div>
+				<div class="image1">
+					<img src="watch tutorial.jpg">			
+				</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+	<div class="Container3" id="about">
+		<div class="ThirdPage">
+			<div class="first">
+				<div class="sub_one">
+					<p>Get Hurry! <br>To Register yourself with E-Du'nia and Collect coins <br>to get benefit in purchasing books<br> from E-Store.</p>
+
+						<div class="download">
+				<a href="#" >
+    				<svg> <rect> </rect> </svg> Register
+  				</a>
+			</div>
+
+				</div>
+				<div class="sub_two">
+					<p> Buy Purchased version and Get all features with guide.<br>
+						Along with this, tutorials and videos.<br>
+						Related to the User qualification, he/She can read books.</p>
+				</div>
+				<div class="sub_three">
+					
+
+					<p>Download Here <br> Free version / trial version, where you find perfect application for study digitally</p>
+					<div class="download" >
+				<a onclick="myFunction2()" href="javascript:void(0);" style="font-size: 15px">
+    				<svg> <rect> </rect> </svg> Get Early Access 
+  				</a>
+			</div>
+				</div>
+			</div>
+
+
+			<div class="pop" id="pop">
+				<form class="form_pop" action="first.php" method="post">
+					<div class="user_name_pop">
+						<label for="user_name"><b>Username</b></label>
+      					<input type="text" placeholder="Enter Username" name="ui-name" required>
+      				</div>
+      				<div class="email_pop">
+						<label for="email"><b>Email</b></label>
+      					<input type="text" placeholder="Enter Email" name="ui-email" required>
+      				</div>
+      				<input type="submit" value="Submit">
+      				<div class="close_pop">
+      					<i class="fa fa-close" style="font-size:38px;color:black" onclick="myFunction1()" ></i>
+      				</div>
+				</form>
+
+			</div>
+
+			<script>
+function myFunction2() {
+  document.getElementById("pop").style.opacity = 1;
+}
+function myFunction1() {
+  document.getElementById("pop").style.opacity = 0;
+}
+</script>
+
+			<div class="second">
+				<div class="boxes1">
+					<div class="dev">
+					<p>Developer</p></div>
+
+					<hr><div class="dev">
+					<p>1. Priya Desai <br>  Email: priyadesai253@gmail.com
+					<br>2. Teli Kishan <br>  Email: kishan21modit07@gmail.com</p>
+					</div>
+				</div>
+				<div class="boxes2">
+					<div class="dev2">
+					<p>Contact Us</p>
+					<hr>
+					<p>Department of Computer Engineering, SAL Engineering & Technical Institute <br>Oppposite Science City, Sola 
+						Bhadaj Road, Ahmedabad, Gujarat-380060 <br>Phone: 079-6521 3534</p>
+					
+					</div>
+				</div>
+				<div class="box1">
+			
+    <ul>
+        <li>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
